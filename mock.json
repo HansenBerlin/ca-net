@@ -1,1 +1,112 @@
-{"openapi":"3.0.0","info":{"title":"Demo users API","version":"1.0.0"},"servers":[{"url":"http://localhost:3000/"}],"paths":{"/api/v2/files/*/upload-file/*":{"post":{"description":"","responses":{"200":{"description":"","content":{"application/json":{}},"headers":{"":{"schema":{"type":"string"},"example":""}}}}}},"/api/v1/oauth/token":{"post":{"description":"","responses":{"200":{"description":"","content":{"application/json":{}},"headers":{"":{"schema":{"type":"string"},"example":""}}}}}},"/api/v2/files/create-folder":{"post":{"description":"","responses":{"200":{"description":"","content":{"application/json":{}},"headers":{"":{"schema":{"type":"string"},"example":""}}}}}},"/api/v2/files/*/create-public-download-link":{"post":{"description":"","responses":{"200":{"description":"","content":{"application/json":{}},"headers":{"":{"schema":{"type":"string"},"example":""}}}}}},"/api/advanced-subject-commands":{"get":{"description":"","responses":{"200":{"description":"","content":{"application/json":{}},"headers":{"":{"schema":{"type":"string"},"example":""}}}}}},"/api/security-info":{"get":{"description":"","responses":{"200":{"description":"","content":{"application/json":{}},"headers":{"":{"schema":{"type":"string"},"example":""}}}}}}}}
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Mock2",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000/"
+    }
+  ],
+  "paths": {
+    "/api/v2/files/*/upload-file/*": {
+      "post": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {}
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/api/v1/oauth/token": {
+      "post": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {}
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/api/v2/files/create-folder": {
+      "post": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {}
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/api/v2/files/*/create-public-download-link": {
+      "post": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {}
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/api/advanced-subject-commands": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {}
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/api/security-info": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {}
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {}
+            },
+            "headers": {}
+          }
+        }
+      }
+    }
+  }
+}
