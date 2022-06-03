@@ -1,112 +1,105 @@
-{
-  "openapi": "3.0.0",
-  "info": {
-    "title": "Mock2",
-    "version": "1.0.0"
-  },
-  "servers": [
-    {
-      "url": "http://localhost:3000/"
-    }
-  ],
-  "paths": {
-    "/api/v2/files/*/upload-file/*": {
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {}
-          }
-        }
-      }
-    },
-    "/api/v1/oauth/token": {
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {}
-          }
-        }
-      }
-    },
-    "/api/v2/files/create-folder": {
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {}
-          }
-        }
-      }
-    },
-    "/api/v2/files/*/create-public-download-link": {
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {}
-          }
-        }
-      }
-    },
-    "/api/advanced-subject-commands": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {}
-          }
-        }
-      }
-    },
-    "/api/security-info": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {}
-          }
-        }
-      }
-    },
-    "/": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {}
-          }
-        }
-      }
-    }
-  }
-}
+openapi: 3.0.0
+info:
+  title: Demo users API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/
+paths:
+  /api/v2/files/*/upload-file/*:
+    post:
+      description: ''
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              examples:
+                id:
+                  value: d755583c47f64ff0b36fc15ac8b11d3c
+                name:
+                  value: Z1 BigAttach Uploads
+                size:
+                  value: 8400
+                created:
+                  value: '2022-06-03T08:28:30.988Z'
+                directory:
+                  value: false
+                customMetadata:
+                  value:
+                    - key: BigAttachForWeb
+                      value: BAUploads
+                creationTime:
+                  value: 2022-06-03T08:28:30.988+0000
+          headers:
+            '':
+              schema:
+                type: string
+              example: ''
+  /api/v1/oauth/token:
+    post:
+      description: ''
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json: {}
+          headers:
+            '':
+              schema:
+                type: string
+              example: ''
+  /api/v2/files/create-folder:
+    post:
+      description: ''
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json: {}
+          headers:
+            '':
+              schema:
+                type: string
+              example: ''
+  /api/v2/files/*/create-public-download-link:
+    post:
+      description: ''
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json: {}
+          headers:
+            '':
+              schema:
+                type: string
+              example: ''
+  /api/advanced-subject-commands:
+    get:
+      description: ''
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json: {}
+          headers:
+            '':
+              schema:
+                type: string
+              example: ''
+  /api/security-info:
+    get:
+      description: ''
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              examples:
+                Security:
+                  value: '"encrypted"'
+          headers:
+            '':
+              schema:
+                type: string
+              example: ''
