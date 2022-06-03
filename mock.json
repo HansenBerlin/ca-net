@@ -1,175 +1,183 @@
 {
-  "openapi": "3.0.0",
-  "info": {
-    "title": "Demo users API",
-    "version": "1.0.0"
-  },
-  "servers": [
+  "uuid": "",
+  "lastMigration": 10,
+  "name": "Demo users API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "routes": [
     {
-      "url": "http://localhost:3000/"
+      "uuid": "",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/v2/files/*/upload-file/*",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "{\"id\":\"d755583c47f64ff0b36fc15ac8b11d3c\",\"name\":\"Z1 BigAttach Uploads\",\"size\":8400,\"created\":\"2022-06-03T08:28:30.988Z\",\"directory\":false,\"customMetadata\":[{\"key\":\"BigAttachForWeb\",\"value\":\"BAUploads\"}],\"creationTime\":\"2022-06-03T08:28:30.988+0000\"}",
+          "latency": 0,
+          "statusCode": "200",
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": []
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "uuid": "",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/v1/oauth/token",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "{\"active\":true,\"token_type\":\"bearer\",\"access_token\":\"gBoByJaYAsJgZK4h99f6YhgJs3HeNiEJsKjnt1rZZw8D5BHrDM\",\"user_name\":\"demouser\",\"user_id\":\"FrlaaawoASlWLwLNPWrXS6w\",\"expires_in\":10799}",
+          "latency": 0,
+          "statusCode": "200",
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": []
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "uuid": "",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/v2/files/create-folder",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "{\"id\":\"d755583c47f64ff0b36fc15ac8b11d3c\",\"name\":\"Z1 BigAttach Uploads\",\"size\":0,\"created\":\"2022-06-03T08:28:30.988Z\",\"directory\":true,\"customMetadata\":[{\"key\":\"BigAttachForWeb\",\"value\":\"BAUploads\"}],\"creationTime\":\"2022-06-03T08:28:30.988+0000\"}",
+          "latency": 0,
+          "statusCode": "200",
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": []
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "uuid": "",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/v2/files/*/create-public-download-link",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "{\"id\":\"1314216b8d734311b4087ebb5416d542\",\"url\":\"download.xhtml?id=1314216b8d734311b4087ebb5416d542\",\"passwordProtected\":true,\"expires\":\"2022-06-17T08:29:49.293Z\",\"expirationTime\":\"2022-06-17T08:29:49.293+0000\"}",
+          "latency": 0,
+          "statusCode": "200",
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": []
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "uuid": "",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/advanced-subject-commands",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "{\"XHeaderName\":\"X-TboneHeader\", \"EnforceProtectionClassification\":true,\"Commands\":[{\"Name\":\"High Secure\",\"Commands\":\"crypt\"}]}",
+          "latency": 0,
+          "statusCode": "200",
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": []
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "uuid": "",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/security-info",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "{\"Security\":\"encrypted\"}",
+          "latency": 0,
+          "statusCode": "200",
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": []
+        }
+      ],
+      "enabled": true
     }
   ],
-  "paths": {
-    "/api/v2/files/*/upload-file/*": {
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "examples": {
-                  "id": {
-                    "value": "d755583c47f64ff0b36fc15ac8b11d3c"
-                  },
-                  "name": {
-                    "value": "Z1 BigAttach Uploads"
-                  },
-                  "size": {
-                    "value": 8400
-                  },
-                  "created": {
-                    "value": "2022-06-03T08:28:30.988Z"
-                  },
-                  "directory": {
-                    "value": false
-                  },
-                  "customMetadata": {
-                    "value": [
-                      {
-                        "key": "BigAttachForWeb",
-                        "value": "BAUploads"
-                      }
-                    ]
-                  },
-                  "creationTime": {
-                    "value": "2022-06-03T08:28:30.988+0000"
-                  }
-                }
-              }
-            },
-            "headers": {
-              "": {
-                "schema": {
-                  "type": "string"
-                },
-                "example": ""
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v1/oauth/token": {
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {
-              "": {
-                "schema": {
-                  "type": "string"
-                },
-                "example": ""
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v2/files/create-folder": {
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {
-              "": {
-                "schema": {
-                  "type": "string"
-                },
-                "example": ""
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v2/files/*/create-public-download-link": {
-      "post": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {
-              "": {
-                "schema": {
-                  "type": "string"
-                },
-                "example": ""
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/advanced-subject-commands": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {}
-            },
-            "headers": {
-              "": {
-                "schema": {
-                  "type": "string"
-                },
-                "example": ""
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/security-info": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "examples": {
-                  "Security": {
-                    "value": "\"encrypted\""
-                  }
-                }
-              }
-            },
-            "headers": {
-              "": {
-                "schema": {
-                  "type": "string"
-                },
-                "example": ""
-              }
-            }
-          }
-        }
-      }
+  "proxyMode": false,
+  "proxyHost": "",
+  "https": true,
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
     }
-  }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
 }
+    
